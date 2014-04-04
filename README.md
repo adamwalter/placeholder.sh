@@ -1,6 +1,6 @@
 #placeholder.sh
 
-Very thin command-line wrapper for [http://placehold.it](placehold.it). Accepts 3 arguments:
+Very thin command-line wrapper for [placehold.it](http://placehold.it). Accepts 3 arguments:
 
 - Width
 - Height
