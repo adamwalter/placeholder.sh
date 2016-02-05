@@ -13,16 +13,15 @@ function url_encode() {
     done
 }
 
-
 if [ $# -gt 0 ]; then
     WIDTH=$1
     HEIGHT=$2
     TEXT=$3
     TEXT_ENC=$(url_encode "$TEXT")
     if [ "$TEXT" != "" ]; then
-        curl http://placehold.it/"$WIDTH"x"$HEIGHT".jpeg\&text="$TEXT_ENC" -o "$TEXT".jpeg
+        curl https://placeholdit.imgix.net/~text?txtsize=75\&txt="$TEXT_ENC"\&w="$WIDTH"\&h="$HEIGHT"\&txttrack=0 -o "$TEXT".png
     else
-        curl -O http://placehold.it/"$WIDTH"x"$HEIGHT".jpeg
+        curl https://placeholdit.imgix.net/~text?txtsize=75\&txt="$WIDTH"x"$HEIGHT"\&w="$WIDTH"\&h="$HEIGHT" -o "$WIDTH"x"$HEIGHT".png
     fi
 else
     echo "You need to specify WIDTH and HEIGHT"
