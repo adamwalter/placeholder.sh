@@ -19,9 +19,9 @@ if [ $# -gt 0 ]; then
     TEXT=$3
     TEXT_ENC=$(url_encode "$TEXT")
     if [ "$TEXT" != "" ]; then
-        curl https://placeholdit.imgix.net/~text?txtsize=75\&txt="$TEXT_ENC"\&w="$WIDTH"\&h="$HEIGHT"\&txttrack=0 -o "$TEXT".png
+        curl https://placeholdit.imgix.net/~text?txtsize=50\&txt="$TEXT_ENC"\&w="$WIDTH"\&h="$HEIGHT"\&txttrack=0 -o "$TEXT".png
     else
-        curl https://placeholdit.imgix.net/~text?txtsize=75\&txt="$WIDTH"x"$HEIGHT"\&w="$WIDTH"\&h="$HEIGHT" -o "$WIDTH"x"$HEIGHT".png
+        curl https://placeholdit.imgix.net/~text?txtsize=50\&txt="$WIDTH"x"$HEIGHT"\&w="$WIDTH"\&h="$HEIGHT" -o "$WIDTH"x"$HEIGHT".png
     fi
 else
     echo "You need to specify WIDTH and HEIGHT"
