@@ -12,15 +12,15 @@ Very thin command-line wrapper for [placehold.it](http://placehold.it). Accepts 
 ph 300 200
 ```
 
-This will create a file named [300x200.jpeg](http://placehold.it/300x200.jpeg) in your current directory.
+This will create a file named 300x200.png in your current directory.
 
 If you specify the third argument, the image will have the text written on it and the file will be named after the argument, for example:
 
 ```
-ph 300 200 "Sample Text"
+placeholder.sh 300 200 "Sample Text"
 ```
 
-Will create a file called [Sample Text.jpeg](http://placehold.it/300x200.jpeg&text=Sample+Text) in your current directory.
+Will create a file called Sample Text.png in your current directory.
 
 ## Installation
 
